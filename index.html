@@ -1,821 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio</title>
-    <link href="/dist/output.css" rel="stylesheet" />
-    <script>document.documentElement.classList.add('js')</script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio</title>
+  <link href="/dist/output.css" rel="stylesheet" />
+  <script>document.documentElement.classList.add('js')</script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
-  </head>
-  <body>
-    <!-- header start -->
+</head>
 
-    <header
-      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
-    >
-      <div class="container">
-        <div class="flex items-center justify-between relative">
-          <div class="px-4">
-            <a href="#home" class="font-bold text-xl text-primary block py-6">
-              Dimas Aldi Putranto
-            </a>
-          </div>
-          <div class="flex items-center px-4">
-            <button
-              id="hamburger"
-              name="hamburger"
-              type="button"
-              class="block absolute right-4 lg:hidden"
-            >
-              <span
-                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
-              ></span>
-              <span
-                class="hamburger-line transition duration-300 ease-in-out"
-              ></span>
-              <span
-                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
-              ></span>
-            </button>
-            <nav
-              id="nav-menu"
-              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
-            >
-              <ul class="block lg:flex">
-                <li class="group">
-                  <a
-                    href="#home"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
-                  >
-                    Beranda
-                  </a>
-                </li>
-                <li class="group">
-                  <a
-                    href="#about"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
-                  >
-                    Tentang Saya
-                  </a>
-                </li>
-                <li class="group">
-                  <a
-                    href="#portofolio"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
-                  >
-                    Portofolio
-                  </a>
-                </li>
-                <li class="group">
-                  <a
-                    href="#clients"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
-                  >
-                    clients
-                  </a>
-                </li>
-                <li class="group">
-                  <a
-                    href="#blog"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
-                  >
-                    Blog
-                  </a>
-                </li>
-                <li class="group">
-                  <a
-                    href="#contact"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
-                  >
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+<body class="scroll-smooth">
+  <!-- header start -->
+  <header class="absolute top-0 left-0 z-10 flex items-center w-full bg-transparent ">
+    <div class="container">
+      <div class="relative flex items-center justify-between">
+        <div class="px-10">
+          <a href="#home" class="block py-6 text-2xl font-bold text-primary">
+            Portofolio
+          </a>
         </div>
-      </div>
-    </header>
-
-    <!-- header end -->
-
-    <!-- Hero section Start! -->
-    <section id="home" class="pt-36 " >
-      <div class="container delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0 " data-taos-offset="300">
-        <div class="flex flex-wrap">
-          <div class="w-full self-center px-4 lg:w-1/2 d" >
-            <h1 class="text-base font-semibold text-primary md:text-xl">
-              Hallo semua 👏, saya
-              <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">
-                Dimas Aldi Putranto
-              </span>
-            </h1>
-            <h2
-              class="font-medium text-secondary text-lg mb-5 mt-5 lg:text-2xl"
-            >
-              FrontEnd Web developer
-            </h2>
-            <p class="font-medium text-secondary mb-10 leading-relaxed">
-              Belajar web programing adalah hal yang menyenangkan bukan.
-              <span class="text-dark font-bold">bukan!</span>
-            </p>
-
-            <a
-              href="https://wa.me/6281315496635"
-              class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 trasition duration-300 ease-in-out"
-            >
-              Hubungi Saya
-            </a>
-          </div>
-         
-
-          <div class="w-full self-end px-4 lg:w-1/2">
-            <div class="relative mt-10 lg:mt-9 lg:right-0">
-              <img
-                src="dist/img/dimas.png"
-                alt="dimas"
-                class="max-w-full mx-auto"
-              />
-              <span
-                class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125"
-              >
-                <svg
-                  width="250"
-                  height="250"
-                  viewBox="0 0 200 200"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill="#14b8a6"
-                    d="M45.7,-59.3C55.9,-55.5,58.6,-37.7,62.5,-21.3C66.4,-4.9,71.7,10,70.9,26.3C70.1,42.5,63.2,60.1,50.4,69.6C37.6,79.1,18.8,80.5,1.3,78.7C-16.1,76.9,-32.3,71.8,-45.2,62.3C-58.1,52.8,-67.7,39,-66.3,25.7C-64.9,12.4,-52.4,-0.3,-46.9,-14.6C-41.4,-29,-42.9,-45,-36.2,-50C-29.5,-54.9,-14.8,-48.8,1.5,-50.9C17.8,-52.9,35.5,-63.1,45.7,-59.3Z"
-                    transform="translate(100 100) scale(1)"
-                  />
-                </svg>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- hero section end! -->
-
-    <!-- About section start -->
-    <section id="about" class="pt-36 pb-32">
-      <div class="container">
-        <div class="delay-[300ms] duration-[600ms] taos:translate-x-[-200px] taos:opacity-0" data-taos-offset="400">
-          <div class="flex flex-wrap">
-            <div class="w-full px-4 mb-10 lg:w-1/2">
-              <h4 class="font-bold uppercase text-primary text-lg mb-3">
-                Tentang saya
-              </h4>
-              <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">
-                Hallo, 🙌
-              </h2>
-              <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">
-                Halo, saya Dimas Aldi Putranto, seorang pengembang front-end yang
-                bersemangat untuk menciptakan pengalaman web yang menarik dan
-                berfungsional. Dengan latar belakang dalam desain dan pengembangan
-                web, saya telah mengembangkan keterampilan dalam HTML, CSS, dan
-                JavaScript untuk menciptakan antarmuka pengguna yang responsif dan
-                menawan.
-              </p>
-            </div>
-            <div class="w-full px-4 lg:w-1/2">
-              <h3
-                class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10"
-              >
-                Mari Berteman
-              </h3>
-              <!-- <p class="font-semibold text-base text-secondary mb-6">
-                dengan beberapa media sosial yang saya punya
-              </p> -->
-              <div class="flex items-center">
-                <!-- youtube -->
-                <a
-                  href="https://youtube.com/dimasdimasaldi"
-                  target="_blank"
-                  class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-                >
-                  <svg
-                    role="img"
-                    width="20"
-                    class="fill-current"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <title>YouTube</title>
-                    <path
-                      d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-                    />
-                  </svg>
+        <div class="flex items-center px-4">
+          <button id="hamburger" name="hamburger" type="button" class="absolute block right-4 lg:hidden">
+            <span class="transition duration-300 ease-in-out origin-top-left hamburger-line"></span>
+            <span class="transition duration-300 ease-in-out hamburger-line"></span>
+            <span class="transition duration-300 ease-in-out origin-bottom-left hamburger-line"></span>
+          </button>
+          <nav id="nav-menu"
+            class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+            <ul class="block lg:flex">
+              <li class="group">
+                <a href="#home" class="flex py-2 mx-8 text-base text-dark group-hover:text-primary">
+                  Beranda
                 </a>
-  
-                <!-- instagram -->
-                <a
-                  href="https://www.instagram.com/dimasald.p/"
-                  target="_blank"
-                  class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-                >
-                  <svg
-                    role="img"
-                    width="20"
-                    class="fill-current"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <title>Instagram</title>
-                    <path
-                      d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
-                    />
-                  </svg>
-                </a>
-  
-                <!-- twitter -->
-                <a
-                  href="https://twitter.com/aldidimas"
-                  target="_blank"
-                  class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-                >
-                  <svg
-                    role="img"
-                    width="20"
-                    class="fill-current"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <title>Twitter</title>
-                    <path
-                      d="M21.543 7.104c.015.211.015.423.015.636 0 6.507-4.954 14.01-14.01 14.01v-.003A13.94 13.94 0 0 1 0 19.539a9.88 9.88 0 0 0 7.287-2.041 4.93 4.93 0 0 1-4.6-3.42 4.916 4.916 0 0 0 2.223-.084A4.926 4.926 0 0 1 .96 9.167v-.062a4.887 4.887 0 0 0 2.235.616A4.928 4.928 0 0 1 1.67 3.148 13.98 13.98 0 0 0 11.82 8.292a4.929 4.929 0 0 1 8.39-4.49 9.868 9.868 0 0 0 3.128-1.196 4.941 4.941 0 0 1-2.165 2.724A9.828 9.828 0 0 0 24 4.555a10.019 10.019 0 0 1-2.457 2.549z"
-                    />
-                  </svg>
-                </a>
-  
-                <!-- fb -->
-                <a
-                  href="https://Facebook.com/dimasaldiputranto"
-                  target="_blank"
-                  class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-                >
-                  <svg
-                    role="img"
-                    width="20"
-                    class="fill-current"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <title>Facebook</title>
-                    <path
-                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
-                    />
-                  </svg>
-                </a>
-  
-                <!-- linkedin -->
-                <a
-                  href="www.linkedin.com/in/dimas-aldi-putranto"
-                  target="_blank"
-                  class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-                >
-                  <svg
-                    role="img"
-                    width="20"
-                    class="fill-current"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <title>LinkedIn</title>
-                    <path
-                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        
-      </div>
-    </section>
-
-    <!-- About sectiion end -->
-
-    <!-- portofolio start -->
-
-    <section id="portofolio" class="pt-36 pb-16 bg-slate-100">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2">Portofolio</h4>
-            <h2
-              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl"
-            >
-              Project
-            </h2>
-            <p class="font-medium text-md text-secondary md:text-lg">
-              Dibawah ini Merupakan beberapa project yang sudah saya kerjakan
-            </p>
-          </div>
-        </div>
-        <div
-          class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
-        >
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img
-                src="dist/img/portofolio/Rehat.JPG"
-                alt="landing-page"
-                width="w-full"
-              />
-            </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3`">
-              Kedai Rehat dan singgah
-            </h3>
-            <p class="font-medium text-base text-secondary">
-              Desain saya menggambarkan nuansa dan karakter unik dari kedai kopi
-              tersebut, dengan penggunaan warna, tipografi, dan grafis yang
-              mencerminkan identitas mereknya. Saya juga menambahkan fitur-fitur
-              interaktif, seperti galeri foto, menu dinamis, dan formulir
-              kontak, untuk memperkaya pengalaman pengguna dan meningkatkan
-              keterlibatan.
-            </p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img src="dist/img/portofolio/2.JPG" alt="page" width="w-full" />
-            </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3`">
-              page Dimas Aldi Putranto
-            </h3>
-            <p class="font-medium text-base text-secondary">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Corrupti, earum et aliquid reprehenderit at consequuntur.
-            </p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img
-                src="dist/img/portofolio/3.JPG"
-                alt="landing"
-                width="w-full"
-              />
-            </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3`">
-              landing Dimas Aldi Putranto
-            </h3>
-            <p class="font-medium text-base text-secondary">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Corrupti, earum et aliquid reprehenderit at consequuntur.
-            </p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img src="dist/img/portofolio/4.JPG" alt="blog" width="w-full" />
-            </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3`">
-              Blog Dimas Aldi Putranto
-            </h3>
-            <p class="font-medium text-base text-secondary">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Corrupti, earum et aliquid reprehenderit at consequuntur.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- portofolio end -->
-
-    <!-- client section start -->
-    <section id="clients" class="pt-36 pb-32 bg-slate-700">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2">Clients</h4>
-            <h2
-              class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl"
-            >
-              Yang pernah bekerjasama
-            </h2>
-            <p class="font-medium text-md text-secondary md:text-lg">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-              maxime voluptatem explicabo similique iusto facilis.
-            </p>
-          </div>
-        </div>
-
-        <div class="w-ful px-4">
-          <div class="flex flex-wrap items-center justify-center">
-            <a
-              href="#"
-              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
-            >
-              <img src="dist/img/clients/Bukalapak.png" alt="Bukalapak" />
-            </a>
-            <a
-              href="#"
-              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
-            >
-              <img src="dist/img/clients/Tokopedia.svg.png" alt="Bukalapak" />
-            </a>
-            <a
-              href="#"
-              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
-            >
-              <img src="dist/img/clients/Google.webp" alt="Bukalapak" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- client section end -->
-
-    <!-- blog section start -->
-    <section id="blog" class="pt-36 pb-32 bg-slate-100">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
-            <h2
-              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl"
-            >
-              Tulisan Terkini
-            </h2>
-            <p class="font-medium text-md text-secondary md:text-lg">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
-              culpa sed harum ab adipisci!
-            </p>
-          </div>
-        </div>
-
-        <div class="flex flex-wrap">
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-              <img
-                src="https://source.unsplash.com/360x200?programming"
-                alt="programming"
-                class="w-full"
-              />
-              <div class="py-8 px-6">
-                <h3>
-                  <a
-                    href=""
-                    class="block mb-3 font-semibold text-dark text-xl hover:text-primary Truncate"
-                  >
-                    Tips menjadi programming
-                  </a>
-                </h3>
-                <p class="font-medium text-base text-secondary mb-6">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Maxime, illo quidem.
-                </p>
-
-                <a
-                  href="#"
-                  class="font-medium text-sm text-white bg-primary py-2 rounded-md px-4 hover:opacity-80"
-                  >Baca Selengkapnya</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-              <img
-                src="https://source.unsplash.com/360x200?mechanical+keyboard"
-                alt="mechaninal+keyboard"
-                class="w-full"
-              />
-              <div class="py-8 px-6">
-                <h3>
-                  <a
-                    href=""
-                    class="block mb-3 font-semibold text-dark text-xl hover:text-primary Truncate"
-                  >
-                    Tips menjadi aku
-                  </a>
-                </h3>
-                <p class="font-medium text-base text-secondary mb-6">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Mollitia culpa et, expedita repellendus sunt dolores iure
-                  deleniti esse?
-                </p>
-
-                <a
-                  href="#"
-                  class="font-medium text-sm text-white bg-primary py-2 rounded-md px-4 hover:opacity-80"
-                  >Baca Selengkapnya</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-              <img
-                src="https://source.unsplash.com/360x200?familly"
-                alt="familly"
-                class="w-full"
-              />
-              <div class="py-8 px-6">
-                <h3>
-                  <a
-                    href=""
-                    class="block mb-3 font-semibold text-dark text-xl hover:text-primary Truncate"
-                  >
-                    Tips menjadi kamu
-                  </a>
-                </h3>
-                <p class="font-medium text-base text-secondary mb-6">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Consequatur qui officiis earum debitis error.
-                </p>
-
-                <a
-                  href="#"
-                  class="font-medium text-sm text-white bg-primary py-2 rounded-md px-4 hover:opacity-80"
-                  >Baca Selengkapnya</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- blog section end -->
-
-    <!-- contact section start -->
-    <section id="contact" class="pt-36 pb-32">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
-            <h2
-              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl"
-            >
-              Hubungi Kami
-            </h2>
-            <p class="font-medium text-md text-secondary md:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-          </div>
-        </div>
-        <form>
-          <div class="w-full lg:w-2/3 lg:mx-auto">
-            <div class="w-full mb-8 px-4">
-              <label for="name" class="text-base text-primary"> Nama </label>
-              <input
-                type="text"
-                id="name"
-                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
-              />
-            </div>
-            <div class="w-full mb-8 px-4">
-              <label for="email" class="text-base text-primary"> Email</label>
-              <input
-                type="email"
-                id="email"
-                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
-              />
-            </div>
-            <div class="w-full mb-8 px-4">
-              <label for="message" class="text-base text-primary">
-                Pesan
-              </label>
-              <textarea
-                type="message"
-                id="message"
-                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"
-              >
-              </textarea>
-              <div class="w-full px-4">
-                <button
-                  class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full mt-5 w-full hover:opacity-80 hover:shadow-lg transition duration-500"
-                >
-                  Kirim
-                </button>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
-    <!-- contact section end -->
-
-    <!-- footer start -->
-    <footer class="bg-dark pt-24 pb-12">
-      <div class="container">
-        <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
-            <h2 class="font-bold text-4xl text-white mb-5">Dimas</h2>
-            <h3 class="text-2xl font-bold mb-2">Hubungi Kami</h3>
-            <p>Dimasaldi360@gamil.com</p>
-            <p>Kp.Stangkle Rt 04 Rw 06 N0 16</p>
-            <p>Semarang</p>
-          </div>
-          <div class="w-full px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-xl text-white mb-5">
-              Kategori Tulisan
-            </h3>
-            <ul class="text-slate-300">
-              <li>
-                <a
-                  href="#"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Programming</a
-                >
               </li>
-              <li>
-                <a
-                  href="#"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Teknologi</a
-                >
+              <li class="group">
+                <a href="#about" class="flex py-2 mx-8 text-base text-dark group-hover:text-primary">
+                  Tentang Saya
+                </a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Famiily</a
-                >
+              <li class="group">
+                <a href="#portofolio" class="flex py-2 mx-8 text-base text-dark group-hover:text-primary">
+                  Portofolio
+                </a>
               </li>
+              
             </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"
+    class="fixed z-50 hidden p-3 rounded-full cursor-pointer text-Black bottom-4 right-4 bg-primary hover:opacity-80">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+      class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+    </svg>
+  </button>
+  <!-- Hero section Start! -->
+  <section id="home" class="pt-36 ">
+    <div class="flex flex-col items-center justify-center gap-y-5">
+      <div class="w-48 h-48 overflow-hidden border-4 rounded-full">
+        <img src="dist/img/dimas2.png" alt="">
+      </div>
+      <div class="text-center">
+        <h1 class="mb-5 text-base font-semibold text-primary md:text-xl">
+          Hallo 👏, My Name Is
+          <span class="block mt-1 text-2xl font-bold text-dark lg:text-5xl">
+            Dimas Aldi Putranto
+          </span>
+        </h1>
+        <h2 class="mb-8 text-lg font-medium text-secondary lg:text-2xl">
+          FrontEnd Web developer
+        </h2>
+        <div class="flex items-center justify-center mb-5">
+          <!-- linkedin -->
+          <a href="www.linkedin.com/in/dimas-aldi-putranto" target="_blank"
+            class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <svg width="24" height="24" viewBox="0 0 72 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M61.35 55.3853H50.682V40.2999C50.682 36.7033 50.61 32.072 45.132 32.072C39.576 32.072 38.724 35.9937 38.724 40.0345V55.3853H28.056V24.3642H38.298V28.6054H38.442C40.53 25.3879 44.418 23.4596 48.546 23.595C59.358 23.595 61.356 30.0137 61.356 38.3716L61.35 55.3799V55.3853ZM16.02 20.1229C14.3812 20.1158 12.8118 19.5253 11.6524 18.4797C10.4931 17.4341 9.83746 16.0178 9.828 14.5384C9.828 11.4725 12.624 8.94838 16.02 8.94838C19.416 8.94838 22.206 11.4725 22.212 14.5384C22.212 17.6042 19.416 20.1229 16.02 20.1229ZM21.354 55.3853H10.674V24.3642H21.354V55.3853ZM66.66 8.05089e-05H5.31C3.9189 -0.0072137 2.58082 0.481402 1.58654 1.35975C0.592253 2.23809 0.022108 3.43519 0 4.6909V60.309C0.022108 61.5647 0.592253 62.7618 1.58654 63.6402C2.58082 64.5185 3.9189 65.0071 5.31 64.9998H66.666C68.0603 65.01 69.4027 64.523 70.4015 63.6447C71.4003 62.7663 71.9748 61.5676 72 60.309V4.68548C71.9747 3.42788 71.3999 2.23027 70.4008 1.35364C69.4016 0.477009 68.0592 -0.00757384 66.666 0.00549676L66.66 8.05089e-05Z"
+                fill="#0A66C2" />
+            </svg>
+
+            <title>LinkedIn</title>
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+          <!-- Github -->
+          <a href="https://youtube.com/dimasdimasaldi" target="_blank"
+            class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <svg width="24" height="24" viewBox="0 0 126 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M63 -2.58393e-05C28.197 -2.58393e-05 0 22.7181 0 50.7565C0 73.1843 18.054 92.2008 43.083 98.9146C46.233 99.3791 47.385 97.8113 47.385 96.4686C47.385 95.2637 47.331 92.0701 47.295 87.8313C29.772 90.9015 26.082 81.0304 26.082 81.0304C23.211 75.1658 19.08 73.6053 19.08 73.6053C13.365 70.4552 19.512 70.5205 19.512 70.5205C25.839 70.8835 29.169 75.7464 29.169 75.7464C34.785 83.5127 43.911 81.2627 47.502 79.9707C48.069 76.69 49.698 74.4545 51.498 73.1843C37.512 71.9069 22.806 67.5519 22.806 48.1C22.806 42.562 25.263 38.0256 29.286 34.4836C28.638 33.1989 26.478 28.0384 29.916 21.056C29.916 21.056 35.19 19.6842 47.232 26.2528C52.3713 25.1236 57.6733 24.5477 63 24.5399C68.355 24.5617 73.746 25.1206 78.777 26.2528C90.801 19.6842 96.084 21.0487 96.084 21.0487C99.522 28.0384 97.362 33.1989 96.714 34.4764C100.746 38.0329 103.194 42.562 103.194 48.1C103.194 67.5955 88.452 71.8923 74.421 73.1408C76.68 74.7085 78.696 77.8078 78.696 82.5474C78.696 89.3265 78.615 94.7992 78.615 96.4686C78.615 97.8259 79.758 99.4009 82.953 98.9073C95.4844 95.5375 106.384 89.0745 114.11 80.4331C121.835 71.7917 125.995 61.4097 126 50.7565C125.99 37.2886 119.348 24.3752 107.533 14.8568C95.7188 5.33827 79.6999 -0.00580248 63 -2.58393e-05Z"
+                fill="#161514" />
+            </svg>
+
+            <title>Github</title>
+            <path
+              d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+            </svg>
+          </a>
+
+          <!-- instagram -->
+          <a href="https://www.instagram.com/dimasald.p/" target="_blank"
+            class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <svg width="24" height="24" viewBox="0 0 114 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M86.9154 16.7595C77.9474 16.9902 77.9497 27.8149 86.9154 28.0435C95.8834 27.8129 95.881 16.9882 86.9154 16.7595Z"
+                fill="#DD2A7B" />
+              <path
+                d="M57 23.2915C41.1054 23.2915 28.221 34.1301 28.221 47.5C29.7373 79.6126 84.2674 79.6037 85.7778 47.5C85.779 34.1301 72.8934 23.2915 57 23.2915ZM57 63.2143C46.6833 63.2143 38.3194 56.1783 38.3194 47.5C39.3035 26.6556 74.7012 26.6605 75.6818 47.5C75.6806 56.1793 67.3167 63.2143 57 63.2143Z"
+                fill="#DD2A7B" />
+              <path
+                d="M112.705 28.1138C112.29 11.6135 99.7774 1.1096 80.1056 0.764094C75.382 0.381954 38.6203 0.375024 33.8932 0.764094C14.2262 1.11257 1.70638 11.6105 1.29456 28.1148C0.839081 32.0719 0.829641 62.9242 1.29456 66.8862C1.66154 83.3331 14.2875 93.929 33.8932 94.2359C38.6168 94.622 75.3785 94.622 80.1056 94.2359C86.0705 94.0072 90.145 93.2123 93.7098 92.05C106.202 87.8633 112.307 78.5504 112.705 66.8852C113.161 62.9222 113.169 32.0798 112.705 28.1138ZM79.6454 85.7724C74.9974 86.1447 39.005 86.1506 34.3534 85.7724C28.89 85.5635 25.9223 84.7973 23.947 84.1538C6.8972 77.5188 12.1836 64.1013 11.38 45.6844C11.3977 41.4066 11.3694 32.7787 11.3812 28.5009C12.0621 15.7477 19.2211 9.84338 34.3534 9.2276C39.0074 8.85536 74.9903 8.84942 79.6454 9.2276C94.8509 9.79883 101.881 15.8052 102.618 28.4999C102.919 31.5481 103.137 48.1881 102.618 56.609C103.178 72.4252 102.319 84.8448 79.6454 85.7724Z"
+                fill="#DD2A7B" />
+            </svg>
+
+            <title>Instagram</title>
+            <path
+              d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+            </svg>
+          </a>
+
+          <!-- fb -->
+          <a href="https://Facebook.com/dimasaldiputranto" target="_blank"
+            class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <svg width="24" height="24" viewBox="0 0 185 175" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M185 88.0345C185 64.6863 175.259 42.2944 157.92 25.7847C140.581 9.27507 117.064 3.75831e-05 92.5428 3.75831e-05C69.2613 -0.020434 46.8287 8.32296 29.726 23.3636C12.6232 38.4043 2.10936 59.0349 0.284598 81.1345C-1.54016 103.234 5.45849 125.176 19.8826 142.576C34.3066 159.977 55.0943 171.556 78.093 175V113.476H54.6353V88.0345H78.1062V68.6418C78.1062 46.5829 91.9088 34.3838 113.029 34.3838C123.146 34.3838 133.726 36.1068 133.726 36.1068V57.7758H122.063C110.572 57.7758 107.006 64.567 107.006 71.5218V88.0345H132.643L128.548 113.476H106.993V175C128.74 171.721 148.545 161.161 162.844 145.219C177.144 129.277 185.001 109 185 88.0345Z"
+                fill="#1877F2" />
+            </svg>
+
+            <title>Facebook</title>
+            <path
+              d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+          </a>
+
+
+        </div>
+        <br>
+        <a href="https://wa.me/6281315496635"
+          class="px-8 py-3 text-base font-semibold text-white duration-300 ease-in-out rounded-full bg-primary hover:shadow-lg hover:opacity-80 trasition">
+          Hubungi Saya
+        </a>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- hero section end! -->
+
+  <!-- About section start -->
+  <section id="about" class="pt-32 pb-32">
+    <div class="container">
+      <div class="delay-[300ms] duration-[600ms] taos:translate-x-[-200px] taos:opacity-0" data-taos-offset="400">
+        <div class="flex flex-wrap">
+          <div class="w-full px-10 mb-10 lg:w-1/2">
+            <h4 class="mb-3 text-lg font-bold uppercase text-primary">
+              About Me 🙎‍♂️
+            </h4>
+            <h2 class="max-w-md mb-5 text-3xl font-bold text-dark lg:text-4xl">
+              Hello, 🙌
+            </h2>
+            <p class="max-w-xl text-base font-medium text-justify text-secondary lg:text-lg">
+              I am Dimas Aldi Putranto, a front-end developer who is passionate about creating engaging and functional
+              web experiences. With a background in design and web development, I have developed skills in HTML, CSS,
+              and
+              JavaScript to create responsive and attractive user interfaces.
+            </p>
           </div>
-          <div class="w-full px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
-            <ul class="text-slate-300">
-              <li>
-                <a
-                  href="#home"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Beranda</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#about"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Tentang Saya</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#portofolio"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Portofolio</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#clients"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Client</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#blog"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Blog</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Contact</a
-                >
-              </li>
-            </ul>
+          <div class="w-full px-10 text-center lg:w-1/2">
+            <h2 class="mb-4 text-3xl font-semibold text-dark lg:text-4xl lg:pt-10">
+              Skill 👋
+            </h2>
+            <div class="flex items-center justify-center gap-5 mb-5">
+              <svg xmlns="http://www.w3.org/2000/svg" height="44" width="44"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path fill="#f90101"
+                  d="M504.4 115.8a5.7 5.7 0 0 0 -.3-.7 8.5 8.5 0 0 0 -.5-1.3 6 6 0 0 0 -.5-.7 9.4 9.4 0 0 0 -.7-.9c-.2-.2-.5-.4-.8-.6a8.8 8.8 0 0 0 -.9-.7L404.4 55.6a8 8 0 0 0 -8 0L300.1 111h0a8.1 8.1 0 0 0 -.9 .7 7.7 7.7 0 0 0 -.8 .6 8.2 8.2 0 0 0 -.7 .9c-.2 .2-.4 .5-.5 .7a9.7 9.7 0 0 0 -.5 1.3c-.1 .2-.2 .4-.3 .7a8.1 8.1 0 0 0 -.3 2.1V223.2l-80.2 46.2V63.4a7.8 7.8 0 0 0 -.3-2.1c-.1-.2-.2-.5-.3-.7a8.4 8.4 0 0 0 -.5-1.2c-.1-.3-.4-.5-.5-.7a9.4 9.4 0 0 0 -.7-.9 9.5 9.5 0 0 0 -.8-.6 9.8 9.8 0 0 0 -.9-.7h0L115.6 1.1a8 8 0 0 0 -8 0L11.3 56.5h0a6.5 6.5 0 0 0 -.9 .7 7.8 7.8 0 0 0 -.8 .6 8.2 8.2 0 0 0 -.7 .9c-.2 .3-.4 .5-.6 .7a7.9 7.9 0 0 0 -.5 1.2 6.5 6.5 0 0 0 -.3 .7 8.2 8.2 0 0 0 -.3 2.1v329.7a8 8 0 0 0 4 7l192.5 110.8a8.8 8.8 0 0 0 1.3 .5c.2 .1 .4 .2 .6 .3a7.9 7.9 0 0 0 4.1 0c.2-.1 .4-.2 .6-.2a8.6 8.6 0 0 0 1.4-.6L404.4 400.1a8 8 0 0 0 4-7V287.9l92.2-53.1a8 8 0 0 0 4-7V117.9A8.6 8.6 0 0 0 504.4 115.8zM111.6 17.3h0l80.2 46.2-80.2 46.2L31.4 63.4zm88.3 60V278.6l-46.5 26.8-33.7 19.4V123.5l46.5-26.8zm0 412.8L23.4 388.5V77.3L57.1 96.7l46.5 26.8V338.7a6.9 6.9 0 0 0 .1 .9 8 8 0 0 0 .2 1.2h0a5.9 5.9 0 0 0 .4 .9 6.4 6.4 0 0 0 .4 1v0a8.5 8.5 0 0 0 .6 .8 7.6 7.6 0 0 0 .7 .8l0 0c.2 .2 .5 .4 .8 .6a8.9 8.9 0 0 0 .9 .7l0 0 0 0 92.2 52.2zm8-106.2-80.1-45.3 84.1-48.4 92.3-53.1 80.1 46.1-58.8 33.6zm184.5 4.6L215.9 490.1V397.8L346.6 323.2l45.8-26.2zm0-119.1L358.7 250l-46.5-26.8V131.8l33.7 19.4L392.4 178zm8-105.3-80.2-46.2 80.2-46.2 80.2 46.2zm8 105.3V178L455 151.2l33.7-19.4v91.4h0z" />
+
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52"
+                viewBox="0 0 640 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path fill="#B197FC"
+                  d="M320 104.5c171.4 0 303.2 72.2 303.2 151.5S491.3 407.5 320 407.5c-171.4 0-303.2-72.2-303.2-151.5S148.7 104.5 320 104.5m0-16.8C143.3 87.7 0 163 0 256s143.3 168.3 320 168.3S640 349 640 256 496.7 87.7 320 87.7zM218.2 242.5c-7.9 40.5-35.8 36.3-70.1 36.3l13.7-70.6c38 0 63.8-4.1 56.4 34.3zM97.4 350.3h36.7l8.7-44.8c41.1 0 66.6 3 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7h-70.7L97.4 350.3zm185.7-213.6h36.5l-8.7 44.8c31.5 0 60.7-2.3 74.8 10.7 14.8 13.6 7.7 31-8.3 113.1h-37c15.4-79.4 18.3-86 12.7-92-5.4-5.8-17.7-4.6-47.4-4.6l-18.8 96.6h-36.5l32.7-168.6zM505 242.5c-8 41.1-36.7 36.3-70.1 36.3l13.7-70.6c38.2 0 63.8-4.1 56.4 34.3zM384.2 350.3H421l8.7-44.8c43.2 0 67.1 2.5 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7H417l-32.8 168.7z" />
+              </svg>
+
+
+            </div>
+
           </div>
         </div>
 
-        <div class="w-full pt-10 border-t border-slate-700">
-          <div class="flex items-center justify-center mb-5">
-            <!-- youtube -->
-            <a
-              href="https://youtube.com/dimasdimasaldi"
-              target="_blank"
-              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-            >
-              <svg
-                role="img"
-                width="20"
-                class="fill-current"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>YouTube</title>
-                <path
-                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-                />
-              </svg>
-            </a>
+      </div>
 
-            <!-- instagram -->
-            <a
-              href="https://instagram.com/aldidimasptr"
-              target="_blank"
-              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-            >
-              <svg
-                role="img"
-                width="20"
-                class="fill-current"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Instagram</title>
-                <path
-                  d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
-                />
-              </svg>
-            </a>
+    </div>
+  </section>
 
-            <!-- twitter -->
-            <a
-              href="https://twitter.com/aldidimas"
-              target="_blank"
-              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-            >
-              <svg
-                role="img"
-                width="20"
-                class="fill-current"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Twitter</title>
-                <path
-                  d="M21.543 7.104c.015.211.015.423.015.636 0 6.507-4.954 14.01-14.01 14.01v-.003A13.94 13.94 0 0 1 0 19.539a9.88 9.88 0 0 0 7.287-2.041 4.93 4.93 0 0 1-4.6-3.42 4.916 4.916 0 0 0 2.223-.084A4.926 4.926 0 0 1 .96 9.167v-.062a4.887 4.887 0 0 0 2.235.616A4.928 4.928 0 0 1 1.67 3.148 13.98 13.98 0 0 0 11.82 8.292a4.929 4.929 0 0 1 8.39-4.49 9.868 9.868 0 0 0 3.128-1.196 4.941 4.941 0 0 1-2.165 2.724A9.828 9.828 0 0 0 24 4.555a10.019 10.019 0 0 1-2.457 2.549z"
-                />
-              </svg>
-            </a>
+  <!-- About sectiion end -->
 
-            <!-- fb -->
-            <a
-              href="https://Facebook.com/dimasaldiputranto"
-              target="_blank"
-              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-            >
-              <svg
-                role="img"
-                width="20"
-                class="fill-current"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Facebook</title>
-                <path
-                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
-                />
-              </svg>
-            </a>
+  <!-- portofolio start -->
 
-            <!-- linkedin -->
-            <a
-              href="https://linkedin.com/"
-              target="_blank"
-              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-            >
-              <svg
-                role="img"
-                width="20"
-                class="fill-current"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>LinkedIn</title>
-                <path
-                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-                />
-              </svg>
-            </a>
-          </div>
-          <p class="font-medium text-sm text-slate-300 text-center">
-            Dibuat dengan <span class="text-pink-600">❤</span> oleh
-            <a
-              href="https://https://instagram.com/aldidims"
-              target="_blank"
-              class="font-bold text-primary"
-              >Dimas Aldi Putranto </a
-            >, menggunakan Tailwind
+  <section id="portofolio" class="pb-16 pt-36 bg-slate-100">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="max-w-xl mx-auto mb-16 text-center">
+          <h2 class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl">
+            Project
+          </h2>
+          <p class="font-medium text-md text-secondary md:text-lg">
+            Below are some of the projects I have worked on
           </p>
-          <p></p>
         </div>
       </div>
-    </footer>
-    <!-- footer end -->
+      <div class="flex flex-wrap justify-center w-full gap xl:w-12/12 xl:mx-auto">
+        <div class="p-4 mb-12 md:w-1/2">
 
-    <div class="w-32 h-32 first-letter: rounded-md delay-[300ms] duration-[600ms] taos:rotate-180 taos:opacity-0" data-taos-offset="200">
-      <h1 class="text-black text-[34px] p-10">
-        HAHAHAHAHA
-      </h1>
-  </div>
-    <script src="dist/js/script.js"></script>
-    <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
-  </body>
+          <div class="overflow-hidden rounded-md shadow-md">
+            <img src="dist/img/portofolio/Map.JPG" alt="landing-page" width="w-48 h-48" />
+          </div>
+          <h2 class="mt-5 mb-5 text-2xl font-semibold text-dark">
+            Presensi with Laravel filament & Fluter
+          </h2>
+          <p class="mb-2 text-justify">
+            Project ini adalah aplikasi mobile presensi (absensi) yang dibangun menggunakan Flutter untuk tampilan
+            antarmuka (frontend) dan Laravel Filament sebagai backend (administrasi) yang terhubung melalui API.
+          </p>
+          <p>
+            <span class="font-serif text-base font-bold">Fitur Utama : </span>
+            <br>
+            Login/Registrasi,Clock-in/Clock-out,Riwayat Presensi,Dashboard Admin
+          </p>
+        </div>
+        <div class="p-4 mb-12 md:w-1/2">
+
+          <div class="overflow-hidden rounded-md shadow-md">
+            <img src="dist/img/portofolio/IndoToko.JPG" alt="landing-page" width="w-48 h-48" />
+          </div>
+          <h2 class="mt-5 mb-5 text-2xl font-semibold text-dark">
+            Online Store dengan Laravel & Livewire
+          </h2>
+          <p class="mb-2 text-justify"> 
+            Project ini merupakan platform e-commerce (online store) yang dikembangkan dengan framework Laravel dan
+            teknologi Livewire untuk menciptakan pengalaman belanja online yang responsif dan dinamis
+          </p>
+          <p>
+            <span class="font-serif text-base font-bold">Fitur Utama : </span>
+            <br>
+            Tampilan Produk,Pencarian & Filter Produk,Keranjang Belanja,Sistem Pemesanan (Checkout),Akun Pengguna
+          </p>
+        </div>
+
+      </div>
+  </section>
+
+  <!-- portofolio end -->
+
+
+
+  <!-- footer start -->
+  <footer class="pt-24 pb-12 bg-dark">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="w-full px-4 mb-12 font-medium text-slate-300 md:w-1/3">
+          <h2 class="mb-5 text-4xl font-bold text-white">Dimas</h2>
+          <h3 class="mb-2 text-2xl font-bold">Hubungi Kami</h3>
+          <p>Dimasaldi360@gamil.com</p>
+          <p>Kp.Stangkle Rt 04 Rw 06 N0 16</p>
+          <p>Semarang</p>
+        </div>
+        <div class="w-full px-4 mb-12 md:w-1/3">
+          <h3 class="mb-5 text-xl font-semibold text-white">
+            Kategori Tulisan
+          </h3>
+          <ul class="text-slate-300">
+            <li>
+              <a href="#" class="inline-block mb-3 text-base hover:text-primary">Programming</a>
+            </li>
+            <li>
+              <a href="#" class="inline-block mb-3 text-base hover:text-primary">Teknologi</a>
+            </li>
+            <li>
+              <a href="#" class="inline-block mb-3 text-base hover:text-primary">Famiily</a>
+            </li>
+          </ul>
+        </div>
+        <div class="w-full px-4 mb-12 md:w-1/3">
+          <h3 class="mb-5 text-xl font-semibold text-white">Tautan</h3>
+          <ul class="text-slate-300">
+            <li>
+              <a href="#home" class="inline-block mb-3 text-base hover:text-primary">Beranda</a>
+            </li>
+            <li>
+              <a href="#about" class="inline-block mb-3 text-base hover:text-primary">Tentang Saya</a>
+            </li>
+            <li>
+              <a href="#portofolio" class="inline-block mb-3 text-base hover:text-primary">Portofolio</a>
+            </li>
+            <li>
+              <a href="#clients" class="inline-block mb-3 text-base hover:text-primary">Client</a>
+            </li>
+            <li>
+              <a href="#blog" class="inline-block mb-3 text-base hover:text-primary">Blog</a>
+            </li>
+            <li>
+              <a href="#contact" class="inline-block mb-3 text-base hover:text-primary">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="w-full pt-10 border-t border-slate-700">
+        <div class="flex items-center justify-center mb-5">
+          <!-- youtube -->
+          <a href="https://youtube.com/dimasdimasaldi" target="_blank"
+            class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>YouTube</title>
+              <path
+                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+            </svg>
+          </a>
+
+          <!-- instagram -->
+          <a href="https://instagram.com/aldidimasptr" target="_blank"
+            class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>Instagram</title>
+              <path
+                d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+            </svg>
+          </a>
+
+          <!-- twitter -->
+          <a href="https://twitter.com/aldidimas" target="_blank"
+            class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>Twitter</title>
+              <path
+                d="M21.543 7.104c.015.211.015.423.015.636 0 6.507-4.954 14.01-14.01 14.01v-.003A13.94 13.94 0 0 1 0 19.539a9.88 9.88 0 0 0 7.287-2.041 4.93 4.93 0 0 1-4.6-3.42 4.916 4.916 0 0 0 2.223-.084A4.926 4.926 0 0 1 .96 9.167v-.062a4.887 4.887 0 0 0 2.235.616A4.928 4.928 0 0 1 1.67 3.148 13.98 13.98 0 0 0 11.82 8.292a4.929 4.929 0 0 1 8.39-4.49 9.868 9.868 0 0 0 3.128-1.196 4.941 4.941 0 0 1-2.165 2.724A9.828 9.828 0 0 0 24 4.555a10.019 10.019 0 0 1-2.457 2.549z" />
+            </svg>
+          </a>
+
+          <!-- fb -->
+          <a href="https://Facebook.com/dimasaldiputranto" target="_blank"
+            class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>Facebook</title>
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+          </a>
+
+          <!-- linkedin -->
+          <a href="https://linkedin.com/" target="_blank"
+            class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>LinkedIn</title>
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+        </div>
+        <p class="text-sm font-medium text-center text-slate-300">
+          Dibuat dengan <span class="text-pink-600">❤</span> oleh
+          <a href="https://https://instagram.com/aldidims" target="_blank" class="font-bold text-primary">Dimas Aldi
+            Putranto </a>, menggunakan Tailwind
+        </p>
+        <p></p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"
+    class="fixed z-50 hidden p-3 rounded-full cursor-pointer text-Black bottom-4 right-4 bg-primary hover:opacity-80">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+      class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+    </svg>
+  </button>
+  <script src="dist/js/script.js"></script>
+  <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
+  <script>
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").classList.add("show");
+      } else {
+        document.getElementById("myBtn").classList.remove("show");
+      }
+    }
+
+    // Fungsi untuk menggulir ke atas halaman
+    function topFunction() {
+      document.body.scrollTop = 0; // Untuk Safari
+      document.documentElement.scrollTop = 0; // Untuk Chrome, Firefox, IE, dan Opera
+    }
+
+    // Event listener untuk scroll
+    window.onscroll = function () { scrollFunction() };
+  </script>
+</body>
+
 </html>
